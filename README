@@ -1,0 +1,25 @@
+# WebSocket
+
+WebSocket is a proof-of-concept BrowserPlus service that creates a persistent TCP Client 
+connection within Ruby.  JavaScript in the browser registers a callback that is notified
+immediately whenever the TCP Server sends data down the pipe, no polling necessary!
+
+Install the WebSocket service locally using the BrowserPlus SDK 
+(http://browserplus.yahoo.com/developer/service/sdk/) ServiceInstaller then start a sample
+TCP Server:
+
+    ruby bp-websocket/src/test/chat_server.rb
+
+This is hard coded to create the server on localhost:2626.
+
+Assuming BrowserPlus is installed, point your browser to:
+
+    bp-websocket/src/test/index.html
+
+Once connected, the server sends a "ping" every 10 seconds.
+
+If you want to see more "data", start telnet on the command line:
+
+    $ telnet localhost 2626
+    [and type some messages]
+    [you will see them immediately in the browser]

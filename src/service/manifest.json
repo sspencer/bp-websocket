@@ -1,0 +1,17 @@
+{  
+  "type": "dependent",  
+  "uses": {  
+    "corelet": "RubyInterpreter",  
+    "version": "4",  
+    "minversion": "4.2.5"  
+  },  
+  "arguments": {  
+    "ScriptFile": "websocket.rb"  
+  },  
+  "strings": {  
+    "en": {  
+      "title": "Web Socket",   
+      "summary": "Opens a TCP socket and calls back into javascript for every update.  No polling needed."  
+    }  
+  }  
+}
