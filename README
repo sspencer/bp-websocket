@@ -4,7 +4,7 @@ WebSocket is a proof-of-concept BrowserPlus service that creates a persistent TC
 connection within Ruby.  JavaScript in the browser registers a callback that is notified
 immediately whenever the TCP Server sends data down the pipe, no polling necessary!
 
-Install the WebSocket service locally using the BrowserPlus SDK 
+Install the WebSocket service locally using the [BrowserPlus SDK]
 (http://browserplus.yahoo.com/developer/service/sdk/) ServiceInstaller then start a sample
 TCP Server:
 
